@@ -4,6 +4,7 @@ const { jwtVerify, createRemoteJWKSet } = require('jose');
 // Stored Key:Value pair of {..., domainName:"", wallet: "", ...} to check if Wallet Address matches on login
 const storedCredentials = [
   { domainName: "shadbolt.crypto", wallet: "0xeb4cF35B0de0Cd980BbF0abD927781b6c23f1cBB" },
+  { domainName: "shadbolt.wallet", wallet: "0xeb4cF35B0de0Cd980BbF0abD927781b6c23f1cDD" },
 ]
 
 /**
