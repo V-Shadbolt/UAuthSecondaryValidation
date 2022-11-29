@@ -3,8 +3,6 @@ import verifyLogin from './verifyLogin'
 
 const uauth = new UAuth({
   clientID: "3c7cb925-c556-4c7e-9cd7-4526466a8aff",
-  clientSecret: "ehUX_o6U20eZrMcbVlJI0SZ8eg",
-  clientAuthMethod: "client_secret_post",
   redirectUri: "http://localhost:5001",
   scope: "openid wallet email"
 
