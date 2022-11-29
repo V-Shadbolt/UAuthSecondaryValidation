@@ -90,9 +90,10 @@ const verifyLogin = async (authorization, client_id) => {
     if (verifyIdTokenSub !== authorization.idToken.sub) {
       throw new Error('Mismatched Domains!');
     } else {
-      if (await verifyNotTransfered(authorization, storedCredentials)) {
-        return true;
-      }
+      // call verifyNotTransfered() if domain ownership transfer is a concern. Notable for social DAPPS
+      //if (await verifyNotTransfered(authorization, storedCredentials)) {
+      return true;
+      //}
     }
   } catch (err) {
     throw new Error(err);
