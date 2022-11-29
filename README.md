@@ -53,7 +53,12 @@ window.logout = async () => {
 }
 ```
 
-**Running the Script**
+### Running the Script
+**NPM**
+`npm install --save-dev parcel`
+`npx parcel --open --port 5001 index.html`
+
+**Yarn**
 `yarn add --dev parcel`
 `yarn parcel --open --port 5001 index.html`
 
